@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Login Section -->
+  <div id="login-page" class="page active">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <p>Don't have an account? <span onclick="switchPage('signup')">Sign Up</span></p>
+  </div>
+
+  <!-- Signup Section -->
+  <div id="signup-page" class="page">
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Sign Up</button>
+    <p>Already have an account? <span onclick="switchPage('login')">Go Back to Login</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

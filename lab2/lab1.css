@@ -1,0 +1,187 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;  
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #e50914;  /* Taylor's signature red color */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+#home {
+    background-color: #000;  
+    color: white;
+    padding-top: 100px;
+}
+
+.song-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.song-item {
+    width: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.song-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.song-item img:hover {
+    transform: scale(1.1);
+}
+
+#arts {
+    background-color: #f1f1f1;  /* Light gray background for arts section */
+    color: #333;
+}
+
+#upcoming-events {
+    background-color: #f8f8f8;  /* Light background for events */
+    color: #333;
+}
+
+#about {
+    background-color: #ffffff; 
+    color: #333;
+}
+
+.album-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.album-item img {
+    width: 270px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.album-item img:hover {
+    transform: scale(1.1);
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.event-list li {
+    background-color: #333;
+    color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.event-list li:hover {
+    background-color: #555;
+}
+
+.small-audio {
+    color: #000;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #e50914;  /* Red background for audio controls */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+h1, h2 {
+    color: #e50914;  /* Taylor's red color for headings */
+    font-weight: bold;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+#arts h2, #upcoming-events h2, #about h2 {
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .song-gallery, .album-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .song-item, .album-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .event-list li {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;  
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #28a745;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    text-align: center;
+    transition: background-color 0.5s ease; 
+}
+
+#home {
+    background-color: #000;  
+    color: white;
+    padding-top: 100px;
+}
+
+.song-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.song-item {
+    width: 200px;
+    text-align: center;
+}
+
+.song-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.song-item img:hover {
+    transform: scale(1.1);
+}
+
+#arts {
+    background-color: #808080;  
+    color: black;
+}
+
+#upcoming-events {
+    background-color: #f0f0f0;  
+    color: black;
+}
+
+#about {
+    background-color: #ffffff; 
+    color: black;
+}
+
+.album-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.album-item img {
+    background-size: cover;
+    background-position: center;
+    width: 270px;
+    border-radius: 30px;
+    transition: transform 0.3s;
+}
+
+.album-item img:hover {
+    transform: scale(1.1);
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.event-list li {
+    background-color: #333;
+    color: white;
+    margin: 10px 0;
+    padding: 50px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.event-list li:hover {
+    background-color: #555;
+}
+
+.small-audio {
+    color: #000;
+    height: 80px;
+    width: 200px;
+}

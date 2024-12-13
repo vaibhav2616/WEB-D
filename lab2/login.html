@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <video autoplay muted loop id="video">
+    <source src="bg.mp4" type="video/mp4"></video>
+
+  <nav>
+    <ul>
+      <!-- <li id="logo">
+        <img src="newlogo.png" alt="The Art Galleria Logo" >
+      </li> -->
+      <li>
+        <a href="https://instagram.com" target="_blank">
+          <img src="ig.jpg" alt="Instagram" />
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com" target="_blank">
+          <img src="x.jpg" alt="X" />
+        </a>
+      </li>
+      <li>
+        <a href="https://reddit.com" target="_blank">
+          <img src="reddit.webp" alt="Reddit" />
+        </a>
+      </li>
+      <li>
+        <a href="contact.html" target="_blank">
+          <img src="contact.jpeg" alt="Contact" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="login-page" class="page active">
+    <div class="wrapper">
+      <div class="form-box">
+        <form action="homepage.html" method="get">
+          <div class="input-container">
+            <input type="text" id="username" placeholder="Enter your Username" required>
+            <label for="username">Username</label>
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-container">
+            <input type="password" id="password" placeholder="Enter your Password" required>
+            <label for="password">Password</label>
+            <i class="bx bx-lock"></i>
+          </div>
+          <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="info-text">
+          <p>Don't have an account? <span onclick="switchPage('signup')" class="register-link">Sign up</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="signup-page" class="page">
+    <div class="wrapper">
+      <div class="form-box">
+        <form action="homepage.html" method="get">
+          <div class="input-container">
+            <input type="text" id="username" placeholder="Enter your Username" required>
+            <label for="username">Username</label>
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-container">
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <label for="email">Email</label>
+            <i class="bx bx-mail-send"></i>
+          </div>
+          <div class="input-container">
+            <input type="password" id="password" placeholder="Enter your Password" required>
+            <label for="password">Password</label>
+            <i class="bx bx-lock"></i>
+          </div>
+          <button type="submit" class="login-button">Sign Up</button>
+        </form>
+        <div class="info-text">
+          <p>Already have an account? <span onclick="switchPage('login')" class="register-link">Go Back to Login</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</html>
