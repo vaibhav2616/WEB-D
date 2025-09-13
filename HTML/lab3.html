@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights - A Modern Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Tech Insights</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Home</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Categories</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">About</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-600 hover:text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="container mx-auto px-4 py-8 md:py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Main Blog Posts Area -->
+            <div class="lg:col-span-2">
+                <h2 class="text-3xl font-bold mb-6">Latest Articles</h2>
+                
+                <!-- Blog Post Card -->
+                <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden mb-8">
+                    <img src="https://placehold.co/800x400/2980b9/ffffff?text=AI+in+the+Cloud" alt="Article about AI" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-900">The Rise of AI in Cloud Computing</h3>
+                        <p class="text-gray-600 mb-4">Explore how artificial intelligence is transforming cloud infrastructure and services, from automated resource management to predictive analytics.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post Card -->
+                <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden mb-8">
+                    <img src="https://placehold.co/800x400/27ae60/ffffff?text=Web+Development+Trends" alt="Article about web development" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-900">Top 5 Web Development Trends for 2025</h3>
+                        <p class="text-gray-600 mb-4">A look at the latest technologies and methodologies shaping the future of web design and development, including AI-driven tools and serverless architecture.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post Card -->
+                <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="https://placehold.co/800x400/8e44ad/ffffff?text=Cybersecurity+Tips" alt="Article about cybersecurity" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-900">Your Guide to Personal Cybersecurity</h3>
+                        <p class="text-gray-600 mb-4">Learn essential tips and best practices to protect your digital life, from strong password management to recognizing common phishing scams.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="lg:col-span-1">
+                <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                    <h3 class="text-xl font-bold mb-4 border-b-2 pb-2">About Us</h3>
+                    <p class="text-gray-600 leading-relaxed">We are a team of tech enthusiasts dedicated to sharing knowledge and insights on the latest trends in technology, programming, and digital innovation. Our goal is to make complex topics easy to understand for everyone.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 border-b-2 pb-2">Popular Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Artificial Intelligence</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Web Development</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Cybersecurity</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Cloud Computing</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Tech Insights. All rights reserved.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

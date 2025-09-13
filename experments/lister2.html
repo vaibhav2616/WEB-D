@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the main ordered list */
+        .main-category-list {
+            list-style-type: upper-roman;
+            color: #004d40; /* Dark Teal */
+            font-family: 'Georgia', serif;
+            font-size: 1.2em;
+            padding-left: 20px;
+        }
+
+        /* Styling for main list items */
+        .main-category-list > li {
+            margin: 15px 0;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .main-category-list > li:hover {
+            color: #ffb300; /* Amber on hover */
+        }
+
+        /* Styling for the nested unordered lists */
+        .sub-category-list {
+            font-family: 'Verdana', sans-serif;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+            padding-left: 30px; /* Indent nested list */
+        }
+
+        /* Different list types for sub-items */
+        .sub-category-list.electronics-items {
+            list-style-type: disc;
+        }
+        
+        .sub-category-list.apparel-items {
+            list-style-type: circle;
+        }
+
+        .sub-category-list.home-items {
+            list-style-type: square;
+        }
+        
+        /* Styling for sub-list items */
+        .sub-category-list > li {
+            margin: 5px 0;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .sub-category-list > li:hover {
+            color: #007bff; /* Blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Shopping Categories</h1>
+        <ol class="main-category-list">
+            <li>
+                Electronics
+                <ul class="sub-category-list electronics-items">
+                    <li>Laptops</li>
+                    <li>Smartphones</li>
+                    <li>Headphones</li>
+                </ul>
+            </li>
+            <li>
+                Apparel
+                <ul class="sub-category-list apparel-items">
+                    <li>Men's Clothing</li>
+                    <li>Women's Clothing</li>
+                    <li>Kids' Wear</li>
+                </ul>
+            </li>
+            <li>
+                Home & Kitchen
+                <ul class="sub-category-list home-items">
+                    <li>Furniture</li>
+                    <li>Cookware</li>
+                    <li>Decorations</li>
+                </ul>
+            </li>
+            <li>
+                Books
+                <ul class="sub-category-list electronics-items">
+                    <li>Fiction</li>
+                    <li>Non-Fiction</li>
+                    <li>Textbooks</li>
+                </ul>
+            </li>
+            <li>
+                Sports & Outdoors
+                <ul class="sub-category-list apparel-items">
+                    <li>Fitness Equipment</li>
+                    <li>Camping Gear</li>
+                    <li>Running Shoes</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>

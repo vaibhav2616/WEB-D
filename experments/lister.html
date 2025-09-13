@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4ff;
+        }
+
+        table {
+            width: 80%;
+            /* border-collapse: collapse; */
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        /* Styling for table header */
+        thead tr {
+            background-color: #002879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #dddfdd;
+        }
+
+        /* Zebra striping for table body */
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:nth-of-type(odd) {
+            background-color: #ffffff;
+        }
+        
+        /* Hover effect on rows */
+        tbody tr:hover {
+            background-color: #f1f1f1;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        /* Conditional formatting for marks below 40 */
+        .fail {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Center all text within the table */
+        th, td {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Vaibhav</td>
+                <td>Physics</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Anwesha</td>
+                <td>Chemistry</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Priya</td>
+                <td>Mathematics</td>
+                <td>35 <span class="fail">(Fail)</span></td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Arjun</td>
+                <td>Biology</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Shreya</td>
+                <td>Computer Science</td>
+                <td>40</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

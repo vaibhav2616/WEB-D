@@ -1,0 +1,37 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.profile-photo {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#my-button {
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#my-button:hover {
+    background-color: #45a049; 
+    cursor: pointer;
+}
