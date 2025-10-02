@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    var string =prompt("Enter a string: ");
+    var len = string.length;
+    var msg = "The string is a palindrome.";
+    for(var i=0; i<len/2; i++){
+        if(string[i] !== string[len-1- i]){
+            msg = "The string is not a palindrome.";
+        }
+    }
+    console.log(`${string}: ${msg}`);
+</script>
+</html>

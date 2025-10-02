@@ -1,0 +1,88 @@
+bookstore {
+  display: block;
+  font-family: sans-serif;
+  color: #333;
+  margin: 20px;
+}
+
+book {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+book:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+title {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+author {
+  display: block;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+year, price {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+price {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+book[category] {
+  border-left: 5px solid #007bff;
+}
+
+book[category="cooking"] {
+  border-color: #28a745;
+}
+
+book[category="children"] {
+  border-color: #fd7e14;
+}
+
+book[category="web"] {
+  border-color: #6f42c1;
+}
+
+title::before {
+  content: "Title: ";
+  font-weight: normal;
+  color: #555;
+}
+
+author::before {
+  content: "By: ";
+  font-weight: normal;
+  color: #555;
+}
+
+year::before {
+  content: "Year: ";
+  font-weight: normal;
+  color: #555;
+}
+
+price::before {
+  content: "Price: $";
+  font-weight: normal;
+  color: #555;
+}
