@@ -31,4 +31,4 @@ function ThreejsComponent() {
   );
 }
 
-export default ThreejsComponent;
+export default ThreejsComponent; 
