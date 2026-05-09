@@ -10,4 +10,4 @@ function CardComponent({ title, description, image }) {
   );
 }
 
-export default CardComponent;
+export default CardComponent; 
