@@ -31,4 +31,4 @@ playSound();
     const audio = new Audio('slash1.mp3');  
     audio.play();
   }
-  
+   
